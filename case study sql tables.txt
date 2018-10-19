@@ -1,0 +1,31 @@
+create table user_master(
+userId varchar(6) primary key,
+userName varchar(15),
+userPassword varchar(20),
+userType varchar(10));
+
+create table Department(
+dept_ID int primary key,
+dept_Name varchar(50));
+
+create table employee(
+emp_Id varchar(6) primary key,
+emp_First_Name varchar(25),
+emp_Last_Name varchar(25),
+emp_Date_Of_Birth date,
+Emp_Date_Of_Joining date,
+Emp_dept_id int,
+Emp_Grade varchar(2),
+Emp_designation varchar(50),
+Emp_Basic int,
+Emp_Gender varchar(1) not null,
+Emp_Marital_status varchar(1),
+Emp_home_Address varchar(100),
+Emp_contact_Num varchar(15));
+
+create table Grade_Master(
+Grade_code varchar(2) primary key,
+Description varchar(10),
+Min_Salary int,
+Max_salary int);
+
